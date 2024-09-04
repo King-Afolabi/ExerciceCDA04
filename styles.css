@@ -1,0 +1,196 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #ff5733;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.custom-border {
+    border: 2px solid #3498db;
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.highlight-text {
+    color: #e44d26;
+    font-weight: bold;
+}
+
+.styled-text {
+    font-style: italic;
+}
+
+.styled-link {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Icônes interactives */
+.icon-container {
+    margin-top: 20px;
+}
+
+.icon-container i {
+    font-size: 2em;
+    color: #3498db;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-container i:hover {
+    transform: scale(1.2);
+}
+
+/* Styles pour les listes */
+.lists-container {
+    margin-top: 30px;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+}
+
+ol li {
+    counter-increment: custom-counter;
+    margin-bottom: 10px;
+}
+
+ol li:before {
+    content: counter(custom-counter) ". ";
+    color: #e44d26;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li:before {
+    content: '\2022'; /* Utilisation du caractère "puce" */
+    color: #3498db;
+    font-size: 1.5em;
+    margin-right: 5px;
+}
+
+/* Styles pour le tableau */
+.table-container {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #3498db;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Styles pour Display et Position */
+.display-position-container {
+    margin-top: 30px;
+}
+
+.block-element, .inline-block-element, .positioned-element, .absolute-element {
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.inline-element {
+    display: inline;
+    margin-right: 10px;
+}
+
+.inline-block-element {
+    display: inline-block;
+}
+
+.positioned-element {
+    position: relative;
+}
+
+.absolute-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Styles pour z-index, overflow, float */
+.z-index-overflow-float-container {
+    margin-top: 30px;
+    overflow: hidden; /* Gestion du débordement */
+}
+
+.element-one, .element-two {
+    border: 1px solid #333;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.element-one {
+    background-color: #e44d26;
+    color: #fff;
+    float: left; /* Utilisation de float pour les éléments côte à côte */
+    margin-right: 10px;
+}
+
+.element-two {
+    background-color: #3498db;
+    color: #fff;
+    z-index: 1; /* z-index pour le positionnement en empilement */
+}
+
+/* Styles pour le formulaire */
+.form-container {
+    margin-top: 30px;
+    max-width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e44d26;
+}
